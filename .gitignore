@@ -1,0 +1,90 @@
+# ─── Node / pnpm ──────────────────────────────────────────────────────────────
+**/node_modules
+.pnpm-store/
+.npm
+.yarn-integrity
+jspm_packages/
+*.tgz
+
+# ─── Build outputs ────────────────────────────────────────────────────────────
+dist/
+build/
+*.dist
+.next
+.nuxt
+.cache
+.parcel-cache
+.out
+.storybook-out
+
+# ─── Java / Maven ─────────────────────────────────────────────────────────────
+target/
+*.class
+*.jar
+*.war
+*.ear
+.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+# ─── Environment variables ────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── IDE / Editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+
+# ─── OS generated ─────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ─── TypeScript ───────────────────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ─── Coverage ─────────────────────────────────────────────────────────────────
+coverage/
+*.lcov
+.nyc_output
+
+# ─── Runtime / temp ───────────────────────────────────────────────────────────
+pids/
+*.pid
+*.seed
+*.pid.lock
+*.bak
+tmp/
+temp/
+
+# ─── Database / migrations ────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ─── Misc tooling ─────────────────────────────────────────────────────────────
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+.webdev/
+.project-config.json
+client/public/__manus__/version.json

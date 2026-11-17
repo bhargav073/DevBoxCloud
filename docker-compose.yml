@@ -1,0 +1,23 @@
+services:
+
+  # ── PostgreSQL — used by the Spring Boot backend ──────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: devbox-postgres
+    environment:
+      POSTGRES_DB:       devboxdb
+      POSTGRES_USER:     devbox
+      POSTGRES_PASSWORD: devbox123
+    ports:
+      - "5433:5432"
+    volumes:
+      - devbox-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U devbox -d devboxdb"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+volumes:
+  devbox-postgres-data:
